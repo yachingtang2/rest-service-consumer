@@ -1,8 +1,13 @@
 package com.tang.interviewconsumer;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Value
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Food {
+
   private String name;
 }

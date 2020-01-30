@@ -9,14 +9,12 @@ public class FoodOrderTransformerTest {
 
   private FoodOrderTransformer transformer;
 
-  private Food food;
-
   private FoodOrder foodOrder;
 
   @BeforeEach
   void setUp() {
     transformer = new FoodOrderTransformer();
-    food = new Food("coke");
+    Food food = new Food("coke");
     foodOrder = new FoodOrder(food, 5);
   }
 

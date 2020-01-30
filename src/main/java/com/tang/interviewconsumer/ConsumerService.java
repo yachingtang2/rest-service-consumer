@@ -26,9 +26,9 @@ public class ConsumerService {
     return responseEntity.getStatusCode() != HttpStatus.OK ? null : transformer.apply(Objects.requireNonNull(responseEntity.getBody()));
   }
 
-  public FoodOrderCount getOrder(String muffin, int count) {
+  public FoodOrderCount getOrder(String name, int count) {
     ResponseEntity<FoodOrder> responseEntity =
-        this.restTemplate.getForEntity(URI.create("http://localhost:8080/order?value=" + muffin +
+        this.restTemplate.getForEntity(URI.create("http://localhost:8080/order?name=" + name +
         "&count=" + count), FoodOrder.class);
 
     return responseEntity.getStatusCode() != HttpStatus.OK ? null :

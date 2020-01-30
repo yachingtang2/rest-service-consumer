@@ -36,7 +36,7 @@ public class ConsumerServiceTest {
 
   private String muffin = "muffin";
 
-  private String orderUrl = URL + "value=" + muffin + "&count=";
+  private String orderUrl = URL + "name=" + muffin + "&count=";
 
   @Test
   void getDefaultOrder() {
